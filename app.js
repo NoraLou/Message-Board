@@ -18,8 +18,8 @@ function($scope){
     if(!$scope.title || $scope.title === '') { return; }
     $scope.posts.push({
       title: $scope.title,
-      upvotes: 0
-      link: $scope.link,
+      upvotes: 0,
+      link: $scope.link
     });
     $scope.title = '';
     $scope.link = '';
@@ -27,15 +27,6 @@ function($scope){
   $scope.incrementUpvotes = function(post) {
     post.upvotes += 1;
   };
-
-
-
-
-
-
-
-
-
 
 }]);
 
